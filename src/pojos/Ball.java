@@ -69,15 +69,15 @@ public class Ball {
 
     public void collided(){
         if(xDir > 0){
-            xDir = -xDir;
+            xDir = -xDir + Math.random();
         }else{
-            xDir = -1 * xDir;
+            xDir = -1 * xDir - Math.random();
         }
 
         if(yDir > 0){
-            yDir = -yDir;
+            yDir = -yDir + Math.random();
         }else {
-            yDir = -1 * yDir;
+            yDir = -1 * yDir - Math.random();
         }
     }
 
